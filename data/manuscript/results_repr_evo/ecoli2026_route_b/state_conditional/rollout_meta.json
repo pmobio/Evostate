@@ -1,0 +1,40 @@
+{
+  "reveal_order": "uniformly random permutation of the endpoint set",
+  "why_random": "transitions are ordered by global frequency during preprocessing; rolling out along that order would plot a preprocessing rule as an evolutionary trajectory",
+  "x_axis": "number of mutations revealed (NOT time; genotype is endpoint-only)",
+  "repeats": 5,
+  "seed": 0,
+  "top_k_tree": 5,
+  "top_k_curve": 5,
+  "hypermutator_excluded_above_hits": 50,
+  "case_selection_rule": "population whose mean precision@5 is closest to the drug median (explicitly not the best case); restricted to populations with >= 4 observed mutations",
+  "primary_metric": "set membership: whether a proposed gene belongs to the population's observed endpoint set. The identity of the next revealed mutation is NOT a prediction target, because the reveal order is random by design",
+  "model_source": "/apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/results_repr_evo/ecoli2026_route_b/endpoint/two_stage_temporal_inferred",
+  "in_sample": true,
+  "cases": {
+    "NIT": {
+      "group_id": "8965_839_D6_ybdK",
+      "background": "ybdK",
+      "n_endpoint_genes": 15,
+      "case_precision_at5": 0.7685714285714286,
+      "drug_median_precision_at5": 0.7685714285714286,
+      "case_percentile": 0.4883720930232558
+    },
+    "MEC": {
+      "group_id": "17222_19356_E2_hns",
+      "background": "hns",
+      "n_endpoint_genes": 6,
+      "case_precision_at5": 0.6413333333333333,
+      "drug_median_precision_at5": 0.6415,
+      "case_percentile": 0.4864864864864865
+    },
+    "TMP": {
+      "group_id": "11645_end_C12_yciS",
+      "background": "yciS",
+      "n_endpoint_genes": 12,
+      "case_precision_at5": 0.5700000000000001,
+      "drug_median_precision_at5": 0.5700000000000001,
+      "case_percentile": 0.5
+    }
+  }
+}

@@ -1,0 +1,4 @@
+source,seed,n_features,n,k,ari,p_value,n_perm
+original_notebook_summary,1,19,29,5,-0.056785155376704685,0.9010494752623688,2000
+original_notebook_test_reproduced,1,19,29,5,-0.056785155376704685,0.9010494752623688,2000
+original_plot_D_annotation_reproduced,0,19,29,5,-0.056785155376704685,0.9025487256371814,2000

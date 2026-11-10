@@ -1,0 +1,165 @@
+{
+  "source_matrix": "<project>/refs/HyperTraPS/datasets/tuberculosis/tuberculosis-v5-header-29.csv",
+  "source_tree": "<project>/refs/HyperTraPS/datasets/tuberculosis/ng.2878-S2.txt",
+  "tree_format": "newick",
+  "matrix_id_col": "Isolate",
+  "feature_set_name": "tuberculosis-v5-header-29",
+  "feature_columns": [
+    "katG",
+    "PinhA",
+    "RRDR",
+    "PpncA",
+    "pncA",
+    "PembA",
+    "embB",
+    "rpsL",
+    "rrs_str",
+    "gidB",
+    "rrs_inj",
+    "Peis",
+    "gyrA",
+    "gyrB",
+    "PethA",
+    "ethA",
+    "rpoA",
+    "rpoC",
+    "rpoB",
+    "INH",
+    "RIF",
+    "PZA",
+    "EMB",
+    "STR",
+    "AMI",
+    "CAP",
+    "MOX",
+    "OFL",
+    "PRO"
+  ],
+  "n_features": 29,
+  "n_matrix_rows_raw": 395,
+  "n_tree_leaves_raw": 1035,
+  "n_matched": 395,
+  "n_matrix_only": 0,
+  "n_tree_only": 640,
+  "matrix_only_examples": [],
+  "tree_only_examples": [
+    "0011N",
+    "0013Q",
+    "0014R",
+    "0016T",
+    "0018W",
+    "0019X",
+    "0020Y",
+    "0023B",
+    "0024C",
+    "0026E",
+    "0028G",
+    "0029H",
+    "0030J",
+    "0032L",
+    "0036Q",
+    "0041W",
+    "0042X",
+    "0043Y",
+    "0044Z",
+    "0048D"
+  ],
+  "n_pruned_tree_leaves": 395,
+  "lineage_group_column": "lineage_group",
+  "lineage_max_group_size": 40,
+  "n_lineage_groups": 60,
+  "lineage_group_size_summary": {
+    "min": 1,
+    "median": 2.0,
+    "max": 39
+  },
+  "largest_lineage_groups": [
+    {
+      "group_id": "clade_038",
+      "size": 39
+    },
+    {
+      "group_id": "clade_021",
+      "size": 38
+    },
+    {
+      "group_id": "clade_014",
+      "size": 37
+    },
+    {
+      "group_id": "clade_020",
+      "size": 32
+    },
+    {
+      "group_id": "clade_015",
+      "size": 31
+    },
+    {
+      "group_id": "clade_019",
+      "size": 27
+    },
+    {
+      "group_id": "clade_029",
+      "size": 22
+    },
+    {
+      "group_id": "clade_028",
+      "size": 20
+    },
+    {
+      "group_id": "clade_018",
+      "size": 17
+    },
+    {
+      "group_id": "clade_008",
+      "size": 15
+    },
+    {
+      "group_id": "clade_043",
+      "size": 12
+    },
+    {
+      "group_id": "clade_007",
+      "size": 11
+    },
+    {
+      "group_id": "clade_054",
+      "size": 11
+    },
+    {
+      "group_id": "clade_011",
+      "size": 5
+    },
+    {
+      "group_id": "clade_017",
+      "size": 5
+    },
+    {
+      "group_id": "clade_023",
+      "size": 5
+    },
+    {
+      "group_id": "clade_013",
+      "size": 4
+    },
+    {
+      "group_id": "clade_002",
+      "size": 3
+    },
+    {
+      "group_id": "clade_016",
+      "size": 3
+    },
+    {
+      "group_id": "clade_022",
+      "size": 3
+    }
+  ],
+  "n_all_zero_barcodes": 5,
+  "n_unique_barcodes": 280,
+  "feature_hierarchy": "<evoamr>/data/processed/tuberculosis_combined29/feature_hierarchy.csv",
+  "pruned_tree": "<evoamr>/data/processed/tuberculosis_combined29/tree_pruned.nwk",
+  "category_barcode": "<evoamr>/data/processed/tuberculosis_combined29/category_barcode.csv",
+  "samples": "<evoamr>/data/processed/tuberculosis_combined29/samples.csv",
+  "evam_matrix": "<evoamr>/data/processed/tuberculosis_combined29/evam_matrix.csv"
+}

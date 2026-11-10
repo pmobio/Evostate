@@ -1,0 +1,62 @@
+{
+  "mode": "tree",
+  "barcode": "/apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/processed/microreact_kp_kleborate22/category_barcode.csv",
+  "hierarchy": null,
+  "n_features": 22,
+  "feature_columns": [
+    "AGly_acquired",
+    "Col_acquired",
+    "Fcyn_acquired",
+    "Flq_acquired",
+    "Gly_acquired",
+    "MLS_acquired",
+    "Phe_acquired",
+    "Rif_acquired",
+    "Sul_acquired",
+    "Tet_acquired",
+    "Tgc_acquired",
+    "Tmt_acquired",
+    "Bla_acquired",
+    "Bla_inhR_acquired",
+    "Bla_ESBL_acquired",
+    "Bla_ESBL_inhR_acquired",
+    "Bla_Carb_acquired",
+    "Bla_chr",
+    "SHV_mutations",
+    "Omp_mutations",
+    "Col_mutations",
+    "Flq_mutations"
+  ],
+  "n_leaves_matched": 11260,
+  "reversible_prior": {
+    "hierarchy": null,
+    "mode": "auto",
+    "patterns": [],
+    "unmatched_patterns": [],
+    "source": null,
+    "reason": "feature_hierarchy.csv not found",
+    "n_reversible": 0,
+    "reversible_features": [],
+    "n_missing_feature_ids": 0,
+    "missing_feature_ids": []
+  },
+  "default_strategy": "irreversible",
+  "default_csv": "transitions.csv",
+  "default_summary": "transitions_summary.json",
+  "strategies": {
+    "irreversible": {
+      "csv": "transitions.csv",
+      "alias_csv": "transitions_irreversible.csv",
+      "summary": "transitions_irreversible_summary.json",
+      "hypertraps_compatible": true,
+      "gain_only": true
+    },
+    "selective_reversible": {
+      "csv": "transitions_selective_reversible.csv",
+      "summary": "transitions_selective_reversible_summary.json",
+      "hypertraps_compatible": false,
+      "gain_only": false,
+      "identical_to_irreversible": true
+    }
+  }
+}

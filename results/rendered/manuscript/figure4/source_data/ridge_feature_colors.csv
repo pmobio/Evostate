@@ -1,0 +1,23 @@
+feature,color_hex,color_basis
+Flq_mutations,#49489a,fixed global empirical feature ordering; not group-specific acquisition time
+AGly_acquired,#5560a9,fixed global empirical feature ordering; not group-specific acquisition time
+Gly_acquired,#6079b8,fixed global empirical feature ordering; not group-specific acquisition time
+Bla_chr,#6c91c7,fixed global empirical feature ordering; not group-specific acquisition time
+SHV_mutations,#76a6d4,fixed global empirical feature ordering; not group-specific acquisition time
+Sul_acquired,#7caed3,fixed global empirical feature ordering; not group-specific acquisition time
+Tmt_acquired,#82b5d1,fixed global empirical feature ordering; not group-specific acquisition time
+Tet_acquired,#87bdd0,fixed global empirical feature ordering; not group-specific acquisition time
+Bla_Carb_acquired,#8dc4cf,fixed global empirical feature ordering; not group-specific acquisition time
+Omp_mutations,#b0cbb2,fixed global empirical feature ordering; not group-specific acquisition time
+Bla_acquired,#d3d295,fixed global empirical feature ordering; not group-specific acquisition time
+Flq_acquired,#f5d678,fixed global empirical feature ordering; not group-specific acquisition time
+Phe_acquired,#f4c672,fixed global empirical feature ordering; not group-specific acquisition time
+Col_acquired,#f4b66c,fixed global empirical feature ordering; not group-specific acquisition time
+Bla_ESBL_acquired,#f3a666,fixed global empirical feature ordering; not group-specific acquisition time
+MLS_acquired,#f29661,fixed global empirical feature ordering; not group-specific acquisition time
+Rif_acquired,#f0845d,fixed global empirical feature ordering; not group-specific acquisition time
+Bla_ESBL_inhR_acquired,#ee7459,fixed global empirical feature ordering; not group-specific acquisition time
+Bla_inhR_acquired,#e96355,fixed global empirical feature ordering; not group-specific acquisition time
+Fcyn_acquired,#db5452,fixed global empirical feature ordering; not group-specific acquisition time
+Col_mutations,#cc444e,fixed global empirical feature ordering; not group-specific acquisition time
+Tgc_acquired,#be354a,fixed global empirical feature ordering; not group-specific acquisition time

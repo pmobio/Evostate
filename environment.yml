@@ -1,0 +1,10 @@
+# Environment used to validate this repository (Python 3.10, Linux).
+# Includes training, preprocessing and manuscript notebook dependencies.
+name: evostate
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -r requirements.txt

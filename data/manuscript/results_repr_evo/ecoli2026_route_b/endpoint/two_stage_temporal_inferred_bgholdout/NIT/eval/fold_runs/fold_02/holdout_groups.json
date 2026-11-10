@@ -1,0 +1,43 @@
+{
+  "fold": 2,
+  "holdout_groups": [
+    "NIT:B7_minC",
+    "NIT:C6_cedA",
+    "NIT:C9_ycjU",
+    "NIT:D6_ybdK",
+    "NIT:D7_sapD",
+    "NIT:G11_adhE",
+    "NIT:G12_recF",
+    "NIT:H7_ompF"
+  ],
+  "train_groups": [
+    "NIT:A2_hda",
+    "NIT:A2_rcsC",
+    "NIT:A7_mutL",
+    "NIT:B11_dam",
+    "NIT:B11_pepT",
+    "NIT:B8_dnaJ",
+    "NIT:C5_lacA",
+    "NIT:C7_lon",
+    "NIT:C8_ptrB",
+    "NIT:D1_atoB",
+    "NIT:D3_rsxD",
+    "NIT:D5_clpS",
+    "NIT:D5_waaC",
+    "NIT:D6_dnaK",
+    "NIT:E10_soxS",
+    "NIT:E10_tatC",
+    "NIT:E2_hns",
+    "NIT:E3_seqA",
+    "NIT:E7_lacA",
+    "NIT:E9_relA",
+    "NIT:F4_yobH",
+    "NIT:F8_uvrD",
+    "NIT:F9_tolC",
+    "NIT:G2_ldtA",
+    "NIT:G6_dedD",
+    "NIT:H1_fis",
+    "NIT:H4_nfuA",
+    "NIT:H9_holC"
+  ]
+}

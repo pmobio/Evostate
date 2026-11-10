@@ -1,0 +1,13 @@
+kind,group,source,status,n_walks,seed
+lineage,ST258,checkpoints/klebsiella_kleborate22_lineage_ST258/model.pt,existing checkpoint; no training,1500.0,1.0
+lineage,ST11,checkpoints/klebsiella_kleborate22_lineage_ST11/model.pt,existing checkpoint; no training,1500.0,1.0
+lineage,ST15,checkpoints/klebsiella_kleborate22_lineage_ST15/model.pt,existing checkpoint; no training,1500.0,1.0
+lineage,ST147,checkpoints/klebsiella_kleborate22_lineage_ST147/model.pt,existing checkpoint; no training,1500.0,1.0
+lineage,ST512,checkpoints/klebsiella_kleborate22_lineage_ST512/model.pt,existing checkpoint; no training,1500.0,1.0
+lineage,ST307,checkpoints/klebsiella_kleborate22_lineage_ST307/model.pt,existing checkpoint; no training,1500.0,1.0
+country,USA,data/manuscript/results_repr_evo/microreact_kp_kleborate22/figures_paper/country_USA_bubble_TS_country.csv,legacy country-specific cache; checkpoint/seed binding not recorded,,
+country,China,data/manuscript/results_repr_evo/microreact_kp_kleborate22/figures_paper/country_China_bubble_TS_country.csv,legacy country-specific cache; checkpoint/seed binding not recorded,,
+country,UK,data/manuscript/results_repr_evo/microreact_kp_kleborate22/figures_paper/country_UK_bubble_TS_country.csv,legacy country-specific cache; checkpoint/seed binding not recorded,,
+country,Italy,data/manuscript/results_repr_evo/microreact_kp_kleborate22/figures_paper/country_Italy_bubble_TS_country.csv,legacy country-specific cache; checkpoint/seed binding not recorded,,
+country,Thailand,data/manuscript/results_repr_evo/microreact_kp_kleborate22/figures_paper/country_Thailand_bubble_TS_country.csv,legacy country-specific cache; checkpoint/seed binding not recorded,,
+country,India,data/manuscript/results_repr_evo/microreact_kp_kleborate22/figures_paper/country_India_bubble_TS_country.csv,legacy country-specific cache; checkpoint/seed binding not recorded,,

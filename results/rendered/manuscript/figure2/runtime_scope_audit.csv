@@ -1,0 +1,8 @@
+dataset,task,runtime_source,runtime_run,runtime_from_other_run,evostate_total_includes_stage1,ht_status
+M. tuberculosis,Genes19,eval_summary.json,tuberculosis_genes19/hypertraps_vs_two_stage/genes19_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800,False,False,
+M. tuberculosis,Antibiotics10,eval_summary.json,tuberculosis_antibiotics10/hypertraps_vs_two_stage/antibiotics10_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800,False,False,
+M. tuberculosis,Combined29,eval_summary.json,tuberculosis_combined29/grouped_cv/eval,True,False,timed out
+K. pneumoniae,Kleborate22,eval_summary.json,microreact_kp_kleborate22/grouped_cv/eval,True,True,timed out
+E. coli,MEC,eval_summary.json,ecoli2026_route_b/endpoint/two_stage_temporal_inferred/MEC/eval,False,False,not attempted
+E. coli,NIT,eval_summary.json,ecoli2026_route_b/endpoint/two_stage_temporal_inferred/NIT/eval,False,False,not attempted
+E. coli,TMP,eval_summary.json,ecoli2026_route_b/endpoint/two_stage_temporal_inferred/TMP/eval,False,False,not attempted

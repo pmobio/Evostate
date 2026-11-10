@@ -1,0 +1,8 @@
+dataset,task,p_vs_random,p_vs_prevalence,p_vs_hypertraps,q_vs_random,q_vs_prevalence,q_vs_hypertraps,status
+M. tuberculosis,Genes19,0.884,0.0,0.487,0.993,0.0,0.487,historical; resampling resolution/dependence not audited; not used for significance
+M. tuberculosis,Antibiotics10,0.993,0.0,0.483,0.993,0.0,0.487,historical; resampling resolution/dependence not audited; not used for significance
+M. tuberculosis,Combined29,0.823,0.0,,0.993,0.0,,historical; resampling resolution/dependence not audited; not used for significance
+K. pneumoniae,Kleborate22,0.013,0.0,,0.02275,0.0,,historical; resampling resolution/dependence not audited; not used for significance
+E. coli,MEC,0.0,0.0,,0.0,0.0,,historical; resampling resolution/dependence not audited; not used for significance
+E. coli,NIT,0.0,0.0,,0.0,0.0,,historical; resampling resolution/dependence not audited; not used for significance
+E. coli,TMP,0.0,0.0,,0.0,0.0,,historical; resampling resolution/dependence not audited; not used for significance

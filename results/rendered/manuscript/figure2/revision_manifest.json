@@ -1,0 +1,14 @@
+{
+  "inputs_sha256": {
+    "/apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/evostate/data/manuscript/results_repr_evo/tuberculosis_genes19/hypertraps_vs_two_stage/genes19_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800/eval_summary.json": "d60685b014d742a68453857a48741bc92a0cf0043f55f25907ca873ded94e851",
+    "/apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/evostate/data/manuscript/results_repr_evo/tuberculosis_antibiotics10/hypertraps_vs_two_stage/antibiotics10_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800/eval_summary.json": "e40a5f9f0c88998e8a025371c72cbdd41439a68e598f503ff85ad072a2e4ed63",
+    "/apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/evostate/data/manuscript/results_repr_evo/tuberculosis_combined29/hypertraps_vs_two_stage/combined29_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800/eval_summary.json": "92e48567fce578a000d458ad3f6c86c1dc72747b58c355e83239b3bde61d5ca1",
+    "/apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/evostate/data/manuscript/results_repr_evo/microreact_kp_kleborate22/hypertraps_vs_two_stage/kleborate_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800/eval_summary.json": "ca75904aacb11fc30031e49dd98ba896629a37037ffd5dd825235f614d51daf5",
+    "/apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/evostate/data/manuscript/results_repr_evo/ecoli2026_route_b/endpoint/two_stage_temporal_inferred/MEC/eval/eval_summary.json": "5389babbbb9977a3e44be6498c927051aac6a0f1603af3f832af79253ebb09be",
+    "/apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/evostate/data/manuscript/results_repr_evo/ecoli2026_route_b/endpoint/two_stage_temporal_inferred/NIT/eval/eval_summary.json": "0a95bab515528497409e6adb8466aacf3a01a48f2eb098d92d09709d73c6e32e",
+    "/apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/evostate/data/manuscript/results_repr_evo/ecoli2026_route_b/endpoint/two_stage_temporal_inferred/TMP/eval/eval_summary.json": "73f5b52b22ed01613ce8b951a313eb61fe0100043fbb7f635ecc1216eeac49a8"
+  },
+  "training_performed": false,
+  "historical_tests": "retained separately; not used for inference",
+  "source_notebook": "figure2_conditional_transition.ipynb"
+}

@@ -1,0 +1,23 @@
+{
+  "drug": "MEC",
+  "mode": "inferred",
+  "order_by": "frequency",
+  "background_mode": "marker",
+  "env_mode": "none",
+  "n_populations": 97,
+  "n_transitions": 2258,
+  "n_features": 858,
+  "n_background_markers": 32,
+  "n_gene_features": 826,
+  "n_gained_total": 2258,
+  "n_environment_features": 0,
+  "population_id_time_anchored": 2193,
+  "transition_strategy": "irreversible",
+  "files": {
+    "transitions": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/MEC/transitions/transitions.csv",
+    "feature_hierarchy": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/MEC/feature_hierarchy.csv",
+    "samples": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/MEC/samples.csv",
+    "transition_timings": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/MEC/transition_timings.csv",
+    "phenotype_covariates": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/MEC/phenotype_covariates.csv"
+  }
+}

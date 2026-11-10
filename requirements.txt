@@ -1,0 +1,17 @@
+# Model training and evaluation
+torch==2.4.0
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+# Preprocessing (phylogenetic trees; E. coli supplementary spreadsheets)
+biopython==1.87
+openpyxl==3.1.5
+# Manuscript notebooks and figure rendering (Python 3.10)
+matplotlib==3.10.9
+scipy==1.15.3
+cartopy==0.25.0
+ipython==8.39.0
+ipykernel==6.28.0
+nbformat==5.10.4
+nbconvert==7.16.4
+jupyterlab==4.2.5

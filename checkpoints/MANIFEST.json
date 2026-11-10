@@ -1,0 +1,665 @@
+{
+  "description": "EvoState checkpoints fitted on all available transitions of each dataset (descriptive analyses; not for held-out evaluation).",
+  "models": {
+    "tuberculosis_genes19": {
+      "file": "checkpoints/tuberculosis_genes19/model.pt",
+      "sha256": "9935c9a7611e9e463857b242b0194adc4fb447c85103198aab01029174a11ab2",
+      "bytes": 13219288,
+      "description": "M. tuberculosis Genes19, fitted on all transitions",
+      "used_in": "Figure 3",
+      "n_features": 19,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/tuberculosis_genes19/transitions/transitions.csv",
+      "n_training_transitions": 264,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 256,
+        "n_layers": 4,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.1,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 90,
+        "best_epoch": 70,
+        "n_states": 159
+      },
+      "stage2": {
+        "epochs_ran": 40,
+        "best_epoch": 20,
+        "best_val_loss": 1.9286010265350342
+      },
+      "reference_output": "checkpoints/tuberculosis_genes19/reference_first_step_ranking.csv"
+    },
+    "tuberculosis_antibiotics10": {
+      "file": "checkpoints/tuberculosis_antibiotics10/model.pt",
+      "sha256": "f7cc907c95c3d6b902e7bf60b8a9d1854cfecf0fae7f1d83778d4cd6f6c37ffc",
+      "bytes": 10046494,
+      "description": "M. tuberculosis Antibiotics10, fitted on all transitions",
+      "used_in": "-",
+      "n_features": 10,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/tuberculosis_antibiotics10/transitions/transitions.csv",
+      "n_training_transitions": 427,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 256,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 44,
+        "best_epoch": 24,
+        "n_states": 99
+      },
+      "stage2": {
+        "epochs_ran": 65,
+        "best_epoch": 45,
+        "best_val_loss": 1.4449366331100464
+      },
+      "reference_output": "checkpoints/tuberculosis_antibiotics10/reference_first_step_ranking.csv"
+    },
+    "tuberculosis_combined29": {
+      "file": "checkpoints/tuberculosis_combined29/model.pt",
+      "sha256": "c441c8286ed153723e0be977b7d178f40f235efafeafae879618da045125c194",
+      "bytes": 10064926,
+      "description": "M. tuberculosis Combined29, fitted on all transitions",
+      "used_in": "-",
+      "n_features": 29,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/tuberculosis_combined29/transitions/transitions.csv",
+      "n_training_transitions": 485,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 256,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 67,
+        "best_epoch": 47,
+        "n_states": 359
+      },
+      "stage2": {
+        "epochs_ran": 47,
+        "best_epoch": 27,
+        "best_val_loss": 2.3857608478363246
+      },
+      "reference_output": "checkpoints/tuberculosis_combined29/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22": {
+      "file": "checkpoints/klebsiella_kleborate22/model.pt",
+      "sha256": "25e3e137c6b8d08568bf053fc725458854401e15344915dba687680e53b0219e",
+      "bytes": 2554836,
+      "description": "K. pneumoniae Kleborate22, fitted on all transitions",
+      "used_in": "Figure 4",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/transitions/transitions.csv",
+      "n_training_transitions": 9026,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 49,
+        "best_epoch": 29,
+        "n_states": 3033
+      },
+      "stage2": {
+        "epochs_ran": 83,
+        "best_epoch": 63,
+        "best_val_loss": 2.0016509687178594
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_country_Brazil": {
+      "file": "checkpoints/klebsiella_kleborate22_country_Brazil/model.pt",
+      "sha256": "61d4c33d344e5bbac2da327154a08081850e470bf2823ccca31d95b90d1b7035",
+      "bytes": 2550612,
+      "description": "K. pneumoniae, transitions reconstructed independently within Brazil",
+      "used_in": "Figure 4 (country analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/country_Brazil/transitions.csv",
+      "n_training_transitions": 255,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 42,
+        "best_epoch": 22,
+        "n_states": 210
+      },
+      "stage2": {
+        "epochs_ran": 24,
+        "best_epoch": 4,
+        "best_val_loss": 2.125216659746672
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_country_Brazil/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_country_China": {
+      "file": "checkpoints/klebsiella_kleborate22_country_China/model.pt",
+      "sha256": "fe9955e679fe81c1f9f85d0d373883563c1da1a9fd7048ea67d29d458988a79a",
+      "bytes": 2550420,
+      "description": "K. pneumoniae, transitions reconstructed independently within China",
+      "used_in": "Figure 4 (country analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/country_China/transitions.csv",
+      "n_training_transitions": 920,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 60,
+        "best_epoch": 59,
+        "n_states": 534
+      },
+      "stage2": {
+        "epochs_ran": 22,
+        "best_epoch": 2,
+        "best_val_loss": 2.0300337542658267
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_country_China/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_country_India": {
+      "file": "checkpoints/klebsiella_kleborate22_country_India/model.pt",
+      "sha256": "2f6e2c9ff94bf3ff3b00f42896844a337b696371b7d24fe33134918926d9514c",
+      "bytes": 2550740,
+      "description": "K. pneumoniae, transitions reconstructed independently within India",
+      "used_in": "Figure 4 (country analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/country_India/transitions.csv",
+      "n_training_transitions": 244,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 44,
+        "best_epoch": 24,
+        "n_states": 192
+      },
+      "stage2": {
+        "epochs_ran": 26,
+        "best_epoch": 6,
+        "best_val_loss": 2.17610612431088
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_country_India/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_country_Italy": {
+      "file": "checkpoints/klebsiella_kleborate22_country_Italy/model.pt",
+      "sha256": "c4c0b89d9ad950abba297d98ddc8b880bee851757e9cb79b2dc44bbde042401b",
+      "bytes": 2551892,
+      "description": "K. pneumoniae, transitions reconstructed independently within Italy",
+      "used_in": "Figure 4 (country analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/country_Italy/transitions.csv",
+      "n_training_transitions": 586,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 60,
+        "best_epoch": 59,
+        "n_states": 262
+      },
+      "stage2": {
+        "epochs_ran": 42,
+        "best_epoch": 22,
+        "best_val_loss": 1.669762752272866
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_country_Italy/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_country_Thailand": {
+      "file": "checkpoints/klebsiella_kleborate22_country_Thailand/model.pt",
+      "sha256": "9bad00c35f635c9097930d424750ef63f1e339a21fbe48cab3581ed45c3c78c8",
+      "bytes": 2550676,
+      "description": "K. pneumoniae, transitions reconstructed independently within Thailand",
+      "used_in": "Figure 4 (country analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/country_Thailand/transitions.csv",
+      "n_training_transitions": 426,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 60,
+        "best_epoch": 49,
+        "n_states": 275
+      },
+      "stage2": {
+        "epochs_ran": 25,
+        "best_epoch": 5,
+        "best_val_loss": 2.0312917828559875
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_country_Thailand/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_country_UK": {
+      "file": "checkpoints/klebsiella_kleborate22_country_UK/model.pt",
+      "sha256": "f7e661d1699422ff44e42184b9fe40cb3d81122e435a808b65f213ba9f51202b",
+      "bytes": 2550548,
+      "description": "K. pneumoniae, transitions reconstructed independently within UK",
+      "used_in": "Figure 4 (country analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/country_UK/transitions.csv",
+      "n_training_transitions": 676,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 60,
+        "best_epoch": 47,
+        "n_states": 360
+      },
+      "stage2": {
+        "epochs_ran": 24,
+        "best_epoch": 4,
+        "best_val_loss": 1.8583552518693527
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_country_UK/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_country_USA": {
+      "file": "checkpoints/klebsiella_kleborate22_country_USA/model.pt",
+      "sha256": "0942f50f44cd748a9f9ed8a978019c3daf6045d13a60e54557d744a6a0ade105",
+      "bytes": 2553172,
+      "description": "K. pneumoniae, transitions reconstructed independently within USA",
+      "used_in": "Figure 4 (country analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/country_USA/transitions.csv",
+      "n_training_transitions": 1574,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 56,
+        "best_epoch": 36,
+        "n_states": 602
+      },
+      "stage2": {
+        "epochs_ran": 60,
+        "best_epoch": 51,
+        "best_val_loss": 1.7698380340964108
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_country_USA/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_lineage_ST11": {
+      "file": "checkpoints/klebsiella_kleborate22_lineage_ST11/model.pt",
+      "sha256": "882261d95ab9de860c0ae2c6aa062c187ca23d2a4ec0dedd1c9e472a25e22fb0",
+      "bytes": 2550868,
+      "description": "K. pneumoniae, transitions of sequence type ST11",
+      "used_in": "Figure 4 (lineage analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/lineage_ST11/transitions.csv",
+      "n_training_transitions": 1014,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 60,
+        "best_epoch": 53,
+        "n_states": 580
+      },
+      "stage2": {
+        "epochs_ran": 28,
+        "best_epoch": 8,
+        "best_val_loss": 1.8707424904170789
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_lineage_ST11/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_lineage_ST147": {
+      "file": "checkpoints/klebsiella_kleborate22_lineage_ST147/model.pt",
+      "sha256": "bb81c5fa5baa51a34b0238af9c4a8b57b97b78c91e0e5237c2e3b571de285b5d",
+      "bytes": 2550868,
+      "description": "K. pneumoniae, transitions of sequence type ST147",
+      "used_in": "Figure 4 (lineage analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/lineage_ST147/transitions.csv",
+      "n_training_transitions": 290,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 35,
+        "best_epoch": 15,
+        "n_states": 217
+      },
+      "stage2": {
+        "epochs_ran": 28,
+        "best_epoch": 8,
+        "best_val_loss": 2.060360778461803
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_lineage_ST147/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_lineage_ST15": {
+      "file": "checkpoints/klebsiella_kleborate22_lineage_ST15/model.pt",
+      "sha256": "0041e50376ef7c92d7f65ad5fe92dc99bb57bcca3ac413d0f212a71c05bb74af",
+      "bytes": 2551252,
+      "description": "K. pneumoniae, transitions of sequence type ST15",
+      "used_in": "Figure 4 (lineage analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/lineage_ST15/transitions.csv",
+      "n_training_transitions": 509,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 60,
+        "best_epoch": 60,
+        "n_states": 314
+      },
+      "stage2": {
+        "epochs_ran": 34,
+        "best_epoch": 14,
+        "best_val_loss": 1.9990800995575755
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_lineage_ST15/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_lineage_ST258": {
+      "file": "checkpoints/klebsiella_kleborate22_lineage_ST258/model.pt",
+      "sha256": "aab79836250a9ac2ab11c6978969345ecd1da47414cc57511523901343287fe2",
+      "bytes": 2552596,
+      "description": "K. pneumoniae, transitions of sequence type ST258",
+      "used_in": "Figure 4 (lineage analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/lineage_ST258/transitions.csv",
+      "n_training_transitions": 1247,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 60,
+        "best_epoch": 60,
+        "n_states": 314
+      },
+      "stage2": {
+        "epochs_ran": 52,
+        "best_epoch": 32,
+        "best_val_loss": 1.6927494887999672
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_lineage_ST258/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_lineage_ST307": {
+      "file": "checkpoints/klebsiella_kleborate22_lineage_ST307/model.pt",
+      "sha256": "e7e904b6f28f9350162612745e8c090556ab4a2c35e12a2fb5c0a87ca9be6e9b",
+      "bytes": 2550804,
+      "description": "K. pneumoniae, transitions of sequence type ST307",
+      "used_in": "Figure 4 (lineage analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/lineage_ST307/transitions.csv",
+      "n_training_transitions": 297,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 24,
+        "best_epoch": 4,
+        "n_states": 140
+      },
+      "stage2": {
+        "epochs_ran": 27,
+        "best_epoch": 7,
+        "best_val_loss": 1.4977872239218817
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_lineage_ST307/reference_first_step_ranking.csv"
+    },
+    "klebsiella_kleborate22_lineage_ST512": {
+      "file": "checkpoints/klebsiella_kleborate22_lineage_ST512/model.pt",
+      "sha256": "25d2cbce3a300fcd833fec4ce262ef3c502d2bc95dc721e41d08daf2a2bbf869",
+      "bytes": 2552020,
+      "description": "K. pneumoniae, transitions of sequence type ST512",
+      "used_in": "Figure 4 (lineage analysis)",
+      "n_features": 22,
+      "n_non_candidate_features": 0,
+      "training_transitions": "data/processed/klebsiella_kleborate22/subsets/lineage_ST512/transitions.csv",
+      "n_training_transitions": 322,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 128,
+        "n_layers": 3,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 36,
+        "best_epoch": 16,
+        "n_states": 84
+      },
+      "stage2": {
+        "epochs_ran": 44,
+        "best_epoch": 24,
+        "best_val_loss": 1.5870277086893718
+      },
+      "reference_output": "checkpoints/klebsiella_kleborate22_lineage_ST512/reference_first_step_ranking.csv"
+    },
+    "ecoli_nit": {
+      "file": "checkpoints/ecoli_nit/model.pt",
+      "sha256": "16a692a807666ab5ecd1804799831620049639c9dea79447c1d7ad85631f88b7",
+      "bytes": 13531224,
+      "description": "E. coli NIT endpoint mutations, fitted on all single-gain sequences",
+      "used_in": "Figure 5",
+      "n_features": 320,
+      "n_non_candidate_features": 35,
+      "training_transitions": "data/processed/ecoli_nit/transitions/transitions.csv",
+      "n_training_transitions": 1819,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 256,
+        "n_layers": 4,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 120,
+        "best_epoch": 116,
+        "n_states": 1666
+      },
+      "stage2": {
+        "epochs_ran": 23,
+        "best_epoch": 3,
+        "best_val_loss": 0.7280980130255004
+      },
+      "reference_output": "checkpoints/ecoli_nit/reference_first_step_ranking.csv"
+    },
+    "ecoli_mec": {
+      "file": "checkpoints/ecoli_mec/model.pt",
+      "sha256": "e4876eba3dd467b8ea6ef96724d40add9b5a1b60d6191b054b21ac97752c3a7c",
+      "bytes": 14089432,
+      "description": "E. coli MEC endpoint mutations, fitted on all single-gain sequences",
+      "used_in": "Figure 5",
+      "n_features": 858,
+      "n_non_candidate_features": 32,
+      "training_transitions": "data/processed/ecoli_mec/transitions/transitions.csv",
+      "n_training_transitions": 2258,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 256,
+        "n_layers": 4,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 120,
+        "best_epoch": 110,
+        "n_states": 2208
+      },
+      "stage2": {
+        "epochs_ran": 21,
+        "best_epoch": 1,
+        "best_val_loss": 1.7084075718854381
+      },
+      "reference_output": "checkpoints/ecoli_mec/reference_first_step_ranking.csv"
+    },
+    "ecoli_tmp": {
+      "file": "checkpoints/ecoli_tmp/model.pt",
+      "sha256": "6d858efbf02836e271833fd5ab6c550e4ed30a4a498b454ee41514829d6539e9",
+      "bytes": 14320920,
+      "description": "E. coli TMP endpoint mutations, fitted on all single-gain sequences",
+      "used_in": "Figure 5",
+      "n_features": 1081,
+      "n_non_candidate_features": 35,
+      "training_transitions": "data/processed/ecoli_tmp/transitions/transitions.csv",
+      "n_training_transitions": 4154,
+      "architecture": {
+        "arch": "transformer",
+        "d_model": 256,
+        "n_layers": 4,
+        "n_heads": 4,
+        "dropout": 0.3
+      },
+      "stage1": {
+        "contrastive_weight": 0.05,
+        "contrastive_temperature": 0.1,
+        "mask_prob_pos": 0.5,
+        "mask_prob_neg": 0.1,
+        "epochs_ran": 120,
+        "best_epoch": 111,
+        "n_states": 4085
+      },
+      "stage2": {
+        "epochs_ran": 21,
+        "best_epoch": 1,
+        "best_val_loss": 1.5724932382041723
+      },
+      "reference_output": "checkpoints/ecoli_tmp/reference_first_step_ranking.csv"
+    }
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "tuberculosis_genes19": {
+    "source_dir": "<evoamr>/data/processed/tuberculosis_genes19",
+    "files": {
+      "transitions/transitions.csv": {
+        "sha256": "4d3166b7dfe63b02904b15b7058006ce06f3dc8b9b13d06d0f6416d35fb97aa7",
+        "bytes": 20990,
+        "byte_identical_to_source": true
+      },
+      "transitions/transitions_summary.json": {
+        "sha256": "d029b06c5593ea77c215df6cec2cb9b4eb49cfce6605ee9e2128dbdd3873e669",
+        "bytes": 1551,
+        "byte_identical_to_source": false
+      },
+      "feature_hierarchy.csv": {
+        "sha256": "0a3635626f9d7978a180f4d19ef57a94874f7d4b17f7f9942879032f0dd6e8ba",
+        "bytes": 1347,
+        "byte_identical_to_source": true
+      },
+      "samples.csv": {
+        "sha256": "776894e13ac47560286b644c1ac8cd27b62cd2d162b0ba94b332f42f20e58720",
+        "bytes": 37073,
+        "byte_identical_to_source": true
+      },
+      "category_barcode.csv": {
+        "sha256": "868686ce116755356279c4707a6dc3d9a47d683c5924d6377a78dbe0c7061025",
+        "bytes": 17495,
+        "byte_identical_to_source": true
+      },
+      "tree_pruned.nwk": {
+        "sha256": "d1a637e8079a191e0cbae9668e80071f18e1b8b52728dc3c5460d30ac6fecdd1",
+        "bytes": 11406,
+        "byte_identical_to_source": true
+      },
+      "prep_report.json": {
+        "sha256": "744de33729a4f9b927aa22bffa251845ade5599f795c6fc4f013dedb9e05e00b",
+        "bytes": 2979,
+        "byte_identical_to_source": false
+      }
+    },
+    "paper_run": "<evoamr>/data/results_repr_evo/tuberculosis_genes19/hypertraps_vs_two_stage/genes19_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800",
+    "paper_run_transitions_same_path": true
+  },
+  "tuberculosis_antibiotics10": {
+    "source_dir": "<evoamr>/data/processed/tuberculosis_antibiotics10",
+    "files": {
+      "transitions/transitions.csv": {
+        "sha256": "f57ff9d668d36ce2c6bef882cca1468626e814df19e5c565f185392edb7744c4",
+        "bytes": 24890,
+        "byte_identical_to_source": true
+      },
+      "transitions/transitions_summary.json": {
+        "sha256": "10ab4349523f68c81d5b461087d4ccc6d28fd710e16c56b87eb8a08138780cdd",
+        "bytes": 1281,
+        "byte_identical_to_source": false
+      },
+      "feature_hierarchy.csv": {
+        "sha256": "98a7507a961f712aeb6c45039e83b05ac1ef36694a6b50b5423775514df8e603",
+        "bytes": 704,
+        "byte_identical_to_source": true
+      },
+      "samples.csv": {
+        "sha256": "e0baf8d8480133f753198bb67a992b96baa8e97b0afbeba4ef46136c6685af20",
+        "bytes": 34697,
+        "byte_identical_to_source": true
+      },
+      "category_barcode.csv": {
+        "sha256": "6ca9d047579f0375c8a012d861f7a4eeb56142ab56cec2f1a921599b99be5cf0",
+        "bytes": 10320,
+        "byte_identical_to_source": true
+      },
+      "tree_pruned.nwk": {
+        "sha256": "d1a637e8079a191e0cbae9668e80071f18e1b8b52728dc3c5460d30ac6fecdd1",
+        "bytes": 11406,
+        "byte_identical_to_source": true
+      },
+      "prep_report.json": {
+        "sha256": "5dc863e4bef39ab9587fccccdf519e2250eab974226af90eb6f970496e2b14b0",
+        "bytes": 2867,
+        "byte_identical_to_source": false
+      }
+    },
+    "paper_run": "<evoamr>/data/results_repr_evo/tuberculosis_antibiotics10/hypertraps_vs_two_stage/antibiotics10_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800",
+    "paper_run_transitions_same_path": true
+  },
+  "tuberculosis_combined29": {
+    "source_dir": "<evoamr>/data/processed/tuberculosis_combined29",
+    "files": {
+      "transitions/transitions.csv": {
+        "sha256": "3afd10700245f1e3fff7310ff381b237865b0865ff699447c95e2bd64faf1bad",
+        "bytes": 49178,
+        "byte_identical_to_source": true
+      },
+      "transitions/transitions_summary.json": {
+        "sha256": "771e6d5de7dbddee02ca008ee89bc0ac1b903be2173ca97f3bae4dcf8c6b8bcd",
+        "bytes": 1753,
+        "byte_identical_to_source": false
+      },
+      "feature_hierarchy.csv": {
+        "sha256": "dad9dabb3daf4bc2852fbfb8739a9b57bc317c54576190d7840e5782aaf8a016",
+        "bytes": 1993,
+        "byte_identical_to_source": true
+      },
+      "samples.csv": {
+        "sha256": "e69b27ff4d17f6273cbcfd9e167724e26dbd7985fbbca1ab1f17b1062f46dedf",
+        "bytes": 33824,
+        "byte_identical_to_source": true
+      },
+      "category_barcode.csv": {
+        "sha256": "6d62d8c3011d88cf90d9ae13b581cb7d30ce10cfb1ee87b5f9b8c3849b0db3b9",
+        "bytes": 25435,
+        "byte_identical_to_source": true
+      },
+      "tree_pruned.nwk": {
+        "sha256": "d1a637e8079a191e0cbae9668e80071f18e1b8b52728dc3c5460d30ac6fecdd1",
+        "bytes": 11406,
+        "byte_identical_to_source": true
+      },
+      "prep_report.json": {
+        "sha256": "c27e5e0cac5678e7ee44e7d7662f66c3848d00dc65dab391b485707c67b55973",
+        "bytes": 3085,
+        "byte_identical_to_source": false
+      }
+    },
+    "paper_run": "<evoamr>/data/results_repr_evo/tuberculosis_combined29/hypertraps_vs_two_stage/combined29_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800",
+    "paper_run_transitions_same_path": true
+  },
+  "klebsiella_kleborate22": {
+    "source_dir": "<evoamr>/data/processed/microreact_kp_kleborate22",
+    "files": {
+      "transitions/transitions.csv": {
+        "sha256": "555bc5d370b5e9c51f553c5d8556e3f19aa292c416fba66792654e155048857d",
+        "bytes": 951222,
+        "byte_identical_to_source": true
+      },
+      "transitions/transitions_summary.json": {
+        "sha256": "6b4c6bb3354a54a3009a52f6f94b2ec604ba3ed34eaecb73a4a77854dae654f6",
+        "bytes": 1922,
+        "byte_identical_to_source": false
+      },
+      "samples.csv": {
+        "sha256": "4307d6f1ece70471ad3968fc5a72fa260bd9777e2100797efbf5d8830942ad60",
+        "bytes": 1720294,
+        "byte_identical_to_source": true
+      },
+      "category_barcode.csv": {
+        "sha256": "dd3c21e19ea932ccf503a2c8d41b7d9615084379e19b4ae24944ea178d902578",
+        "bytes": 664999,
+        "byte_identical_to_source": true
+      },
+      "prep_report.json": {
+        "sha256": "329d56d0a62bac3fef5c1da2a64a13810949d7b837fbadb184a426deb1776b81",
+        "bytes": 1806,
+        "byte_identical_to_source": false
+      },
+      "subsets/country_Brazil/transitions.csv": {
+        "sha256": "6fc316bf478ca644fe67056ba4ef46d739d0f66f7c2268e2208e2f580d2ecb18",
+        "bytes": 26941,
+        "byte_identical_to_source": true
+      },
+      "subsets/country_China/transitions.csv": {
+        "sha256": "9acc2901697ee0657f0f0b74b92d3e8f5c7c9d56959a787858e7486d5c850233",
+        "bytes": 98620,
+        "byte_identical_to_source": true
+      },
+      "subsets/country_India/transitions.csv": {
+        "sha256": "e329121f01f9b5a96e9e02de806f8c72e121949def645ded5286c217d35ee2c9",
+        "bytes": 26558,
+        "byte_identical_to_source": true
+      },
+      "subsets/country_Italy/transitions.csv": {
+        "sha256": "76e56490223c981d1dc1bf01f324828205fd2234ad89de8f9275130147a3326e",
+        "bytes": 61024,
+        "byte_identical_to_source": true
+      },
+      "subsets/country_Thailand/transitions.csv": {
+        "sha256": "e72aa8d24487929a588d88dd2be67179669e47ef272603844e5030d527cf87f6",
+        "bytes": 46559,
+        "byte_identical_to_source": true
+      },
+      "subsets/country_UK/transitions.csv": {
+        "sha256": "e4d41cb9e8ce13d576933ddef57b41e29cb46afa36b2eec14696ecf2a16a1378",
+        "bytes": 71184,
+        "byte_identical_to_source": true
+      },
+      "subsets/country_USA/transitions.csv": {
+        "sha256": "443852639ad34ed77655866dd20a5e462c48ec6305c23a3e053be7c6ba075a69",
+        "bytes": 162255,
+        "byte_identical_to_source": true
+      },
+      "subsets/lineage_ST11/transitions.csv": {
+        "sha256": "62527e7fac9fa8c6ef1673335f91445d60fcb99598b5c4b9884f13988a7c0410",
+        "bytes": 104487,
+        "byte_identical_to_source": true
+      },
+      "subsets/lineage_ST147/transitions.csv": {
+        "sha256": "991d86b3c98b682006d0fbbf7a838524fe64533281223085725cb956af8146ba",
+        "bytes": 31500,
+        "byte_identical_to_source": true
+      },
+      "subsets/lineage_ST15/transitions.csv": {
+        "sha256": "b904648b18d08f4d2c4c85ae81a2f3349940651a3bb127494554bffec6ee5784",
+        "bytes": 53457,
+        "byte_identical_to_source": true
+      },
+      "subsets/lineage_ST258/transitions.csv": {
+        "sha256": "fdc5605ede250d7110e2ffbb2703eca607dcb679f65ac50be0a30619362cbef7",
+        "bytes": 125236,
+        "byte_identical_to_source": true
+      },
+      "subsets/lineage_ST307/transitions.csv": {
+        "sha256": "12a510ee9354f41defbd054d46cab94c13c5bd999584e48c0934f2dcb79696ac",
+        "bytes": 30864,
+        "byte_identical_to_source": true
+      },
+      "subsets/lineage_ST512/transitions.csv": {
+        "sha256": "7fefb92796024590d172955c00363779cbc3d396fe78abc08a8c569dff725461",
+        "bytes": 33164,
+        "byte_identical_to_source": true
+      }
+    },
+    "paper_run": "<evoamr>/data/results_repr_evo/microreact_kp_kleborate22/hypertraps_vs_two_stage/kleborate_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800",
+    "paper_run_transitions_same_path": true
+  },
+  "ecoli_nit": {
+    "source_dir": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/NIT",
+    "files": {
+      "transitions/transitions.csv": {
+        "sha256": "624fcaed086a783673999e2a4f0452aa028f556008213204fcf39b9c376384a4",
+        "bytes": 1231609,
+        "byte_identical_to_source": true
+      },
+      "feature_hierarchy.csv": {
+        "sha256": "c6ff57b4bdd340e2d8e486c3ca8bfdb59a25aa47d73c165c2ffe92f6f436c3eb",
+        "bytes": 10798,
+        "byte_identical_to_source": true
+      },
+      "samples.csv": {
+        "sha256": "a55e855634418eb4b76512841adec7a6dbc04bf477c6dc2a16fe6e03574bcc06",
+        "bytes": 8064,
+        "byte_identical_to_source": true
+      },
+      "transition_timings.csv": {
+        "sha256": "ac4997aad39111cef403b8cafd91b7d7cdaba1fbe17ca389b12e16ac5ea043fe",
+        "bytes": 121880,
+        "byte_identical_to_source": true
+      },
+      "manifest.json": {
+        "sha256": "f042781dd1c2c307f71cb9fbcba994dd96c98ac4bbbabd59c621029787e2d4b8",
+        "bytes": 960,
+        "byte_identical_to_source": false
+      }
+    },
+    "paper_run": "<evoamr>/data/results_repr_evo/ecoli2026_route_b/endpoint/two_stage_temporal_inferred/NIT/eval",
+    "paper_run_transitions_same_path": true
+  },
+  "ecoli_mec": {
+    "source_dir": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/MEC",
+    "files": {
+      "transitions/transitions.csv": {
+        "sha256": "3c88126faa6fb82ef02d2c679a03dff82bd5223b7c8a4264b987dac200df2083",
+        "bytes": 3958345,
+        "byte_identical_to_source": true
+      },
+      "feature_hierarchy.csv": {
+        "sha256": "da6ee01fd09a5b05173776f3fee1cd54c437c127e7c8a9271499154f1b2bf4a1",
+        "bytes": 26238,
+        "byte_identical_to_source": true
+      },
+      "samples.csv": {
+        "sha256": "c09ba47d327d0321fdc33460b114d395ac0c19690501782967910e60bf438d4c",
+        "bytes": 8046,
+        "byte_identical_to_source": true
+      },
+      "transition_timings.csv": {
+        "sha256": "8cda2eb8092b830c723a46622527e27db38e082d6817424e5fadc2137f9d23e1",
+        "bytes": 166353,
+        "byte_identical_to_source": true
+      },
+      "manifest.json": {
+        "sha256": "2aef4dce2b0065a4f1172ab824fc45db1eef4add0413f2ec7e2ee3180edc72a0",
+        "bytes": 959,
+        "byte_identical_to_source": false
+      }
+    },
+    "paper_run": "<evoamr>/data/results_repr_evo/ecoli2026_route_b/endpoint/two_stage_temporal_inferred/MEC/eval",
+    "paper_run_transitions_same_path": true
+  },
+  "ecoli_tmp": {
+    "source_dir": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/TMP",
+    "files": {
+      "transitions/transitions.csv": {
+        "sha256": "75e2fbf981697bf55aba8cd57fdc7f128beb2fc0f03722bbab957389923094cb",
+        "bytes": 9134768,
+        "byte_identical_to_source": true
+      },
+      "feature_hierarchy.csv": {
+        "sha256": "70b59794e56896a92eccea1189a51bba4192fcfb7ee95c62e7419eafa39e8fdb",
+        "bytes": 32821,
+        "byte_identical_to_source": true
+      },
+      "samples.csv": {
+        "sha256": "2b9c90c4ccbe937be351c4ca1b6cfc8a2d4e1e059a999193a24d98259c797eba",
+        "bytes": 8772,
+        "byte_identical_to_source": true
+      },
+      "transition_timings.csv": {
+        "sha256": "78ccde137b7e972a4a10c953459e51912472f86fac7f82c067f2c16c390c994c",
+        "bytes": 303460,
+        "byte_identical_to_source": true
+      },
+      "manifest.json": {
+        "sha256": "5cd33f24ff3bd018c5629b7bc4e13ea1b24cd818d82969842cb50f1d2c58232f",
+        "bytes": 962,
+        "byte_identical_to_source": false
+      }
+    },
+    "paper_run": "<evoamr>/data/results_repr_evo/ecoli2026_route_b/endpoint/two_stage_temporal_inferred/TMP/eval",
+    "paper_run_transitions_same_path": true
+  }
+}

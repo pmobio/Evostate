@@ -1,0 +1,13 @@
+panel,quantity,value
+a,features,19.0
+a,low-support features,6.0
+b,rho HyperTraPS,0.76
+b,rho EvoState,0.788
+b,MAE HyperTraPS,1.351
+b,MAE EvoState,1.083
+c,steps,4.0
+c,ribbons above min_flow,109.0
+d,candidate pairs,80.0
+d,selected pairs,6.0
+d,promoting pairs,4.0
+d,repressing pairs,2.0

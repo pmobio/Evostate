@@ -1,0 +1,5 @@
+method,n_folds,mean_train_sec,mean_eval_sec,mean_total_sec
+TS_random_init,5,92242.0004,26.7771,92268.7775
+TS_pretrained,5,26392.6565,12.9897,26405.6462
+B0_uniform,5,,2.6372,2.6372
+B1_prevalence,5,,2.6502,2.6502

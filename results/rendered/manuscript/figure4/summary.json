@@ -1,0 +1,237 @@
+{
+  "n_genomes": 11260,
+  "n_characters": 22,
+  "n_unique_profiles": 2464,
+  "n_inferred_transitions": 9026,
+  "split_STs_excluded_from_performance": [
+    "ST11",
+    "ST258"
+  ],
+  "main_B": {
+    "minimum_single": 20,
+    "n_ST": 25,
+    "n_positive": 24,
+    "n_single": 1561,
+    "ST_equal_mean_delta_LL": 0.41681918629066445,
+    "ST_bootstrap_95_CI": [
+      0.31767377183597434,
+      0.5274158065923507
+    ],
+    "edge_weighted_mean_delta_LL": 0.3503785421532007
+  },
+  "country_cluster_continent_test": {
+    "n": 29,
+    "k": 5,
+    "ari": -0.056785155376704685,
+    "p_value": 0.9025487256371814,
+    "n_perm": 2000,
+    "cluster_sizes": [
+      5,
+      2,
+      4,
+      5,
+      13
+    ],
+    "clusters": {
+      "Kenya": 1,
+      "Senegal": 5,
+      "Madagascar": 5,
+      "Nigeria": 5,
+      "USA": 1,
+      "Caribbean": 5,
+      "Colombia": 4,
+      "Brazil": 5,
+      "China": 2,
+      "Israel": 4,
+      "Japan": 4,
+      "India": 4,
+      "Turkey": 3,
+      "Thailand": 3,
+      "Cambodia": 5,
+      "Vietnam": 5,
+      "Nepal": 5,
+      "Pakistan": 5,
+      "Portugal": 5,
+      "Germany": 4,
+      "Russia": 5,
+      "Romania": 5,
+      "Poland": 5,
+      "Spain": 3,
+      "France": 3,
+      "Greece": 2,
+      "UK": 1,
+      "Italy": 1,
+      "Australia": 1
+    }
+  },
+  "separate_country_PCA_continent_test": {
+    "n": 28,
+    "k": 4,
+    "F": 2.706421761807705,
+    "p_value": 0.006496751624187906,
+    "r2": 0.2527849006903633,
+    "n_perm": 2000
+  },
+  "country_deviation_legacy_cache_max_difference": 8.881784197001252e-16,
+  "map_unmapped_genomes": 797,
+  "training_performed": false,
+  "support_scatter": {
+    "minimum_single": 5,
+    "n_ST": 86,
+    "correlations": [
+      {
+        "support_measure": "n_genomes",
+        "minimum_single": 5,
+        "scope": "strictly held-out STs with >=5 single gains and recorded genome count",
+        "n_ST": 86,
+        "spearman_rho": -0.18737260365330516,
+        "p_value": 0.08407229487979943
+      },
+      {
+        "support_measure": "n_single",
+        "minimum_single": 5,
+        "scope": "strictly held-out STs with >=5 single gains and recorded genome count",
+        "n_ST": 86,
+        "spearman_rho": -0.20172525675187244,
+        "p_value": 0.06252623371395322
+      }
+    ]
+  },
+  "country_cluster_legacy_reconciliation": [
+    {
+      "source": "original_notebook_summary",
+      "seed": 1,
+      "n_features": 19,
+      "n": 29,
+      "k": 5,
+      "ari": -0.056785155376704685,
+      "p_value": 0.9010494752623688,
+      "n_perm": 2000
+    },
+    {
+      "source": "original_notebook_test_reproduced",
+      "seed": 1,
+      "n_features": 19,
+      "n": 29,
+      "k": 5,
+      "ari": -0.056785155376704685,
+      "p_value": 0.9010494752623688,
+      "n_perm": 2000
+    },
+    {
+      "source": "original_plot_D_annotation_reproduced",
+      "seed": 0,
+      "n_features": 19,
+      "n": 29,
+      "k": 5,
+      "ari": -0.056785155376704685,
+      "p_value": 0.9025487256371814,
+      "n_perm": 2000
+    }
+  ],
+  "country_plot_D_reproduction": {
+    "features_for_clustering": [
+      "Bla_chr",
+      "AGly_acquired",
+      "Fcyn_acquired",
+      "Flq_mutations",
+      "SHV_mutations",
+      "Bla_inhR_acquired",
+      "Sul_acquired",
+      "Bla_acquired",
+      "Tmt_acquired",
+      "Tet_acquired",
+      "Bla_ESBL_acquired",
+      "Bla_Carb_acquired",
+      "Flq_acquired",
+      "Omp_mutations",
+      "Phe_acquired",
+      "Rif_acquired",
+      "MLS_acquired",
+      "Col_acquired",
+      "Col_mutations"
+    ],
+    "country_order": [
+      "Kenya",
+      "Senegal",
+      "Madagascar",
+      "Nigeria",
+      "USA",
+      "Caribbean",
+      "Colombia",
+      "Brazil",
+      "China",
+      "Israel",
+      "Japan",
+      "India",
+      "Turkey",
+      "Thailand",
+      "Cambodia",
+      "Vietnam",
+      "Nepal",
+      "Pakistan",
+      "Portugal",
+      "Germany",
+      "Russia",
+      "Romania",
+      "Poland",
+      "Spain",
+      "France",
+      "Greece",
+      "UK",
+      "Italy",
+      "Australia"
+    ],
+    "vmax": 4.780264787625765,
+    "missing_rule": "zero reconstructed gain events; all nonzero-gain cells colored, no point overlays",
+    "annotation_seed": 0,
+    "standalone_test_seed": 1
+  },
+  "heatmap_support_audit": [
+    {
+      "panel": "main_D",
+      "total_cells": 616,
+      "no_gain_grey": 141,
+      "low_support_colored": 93,
+      "supported_colored": 382
+    },
+    {
+      "panel": "main_E",
+      "total_cells": 638,
+      "no_gain_grey": 141,
+      "low_support_colored": 69,
+      "supported_colored": 428
+    },
+    {
+      "panel": "S4_D",
+      "total_cells": 638,
+      "no_gain_grey": 141,
+      "low_support_colored": 69,
+      "supported_colored": 428
+    }
+  ],
+  "lineage_clustering": {
+    "interpretation": "acquisition deviation similarity, not genetic phylogeny",
+    "distance": "correlation",
+    "linkage": "average; optimal leaf ordering",
+    "minimum_local_gains": 5,
+    "minimum_ST_coverage": 0.7,
+    "features": [
+      "AGly_acquired",
+      "Bla_chr",
+      "SHV_mutations",
+      "Sul_acquired",
+      "Tmt_acquired",
+      "Tet_acquired",
+      "Bla_Carb_acquired",
+      "Omp_mutations",
+      "Bla_acquired",
+      "Flq_acquired",
+      "Phe_acquired",
+      "Bla_ESBL_acquired",
+      "MLS_acquired"
+    ],
+    "imputed_cells": 27,
+    "imputation": "feature median among supported STs, clustering only; display unchanged"
+  }
+}

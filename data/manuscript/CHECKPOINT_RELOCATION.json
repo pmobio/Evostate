@@ -1,0 +1,59 @@
+{
+  "description": "Original stage-2 checkpoints replaced by the released copies in checkpoints/. state_dict tensors are identical; only metadata differs (absolute paths redacted, feature_names/release fields added).",
+  "checkpoints": [
+    {
+      "original_path": "evoamr/data/results_repr_evo/microreact_kp_kleborate22/lineage_ST11/stage2/model.pt",
+      "original_sha256": "adfe0f0846b14ffdd35a085c805c9765eb389c1819c19862d2caa66447bd24fc",
+      "repository_path": "checkpoints/klebsiella_kleborate22_lineage_ST11/model.pt",
+      "repository_sha256": "882261d95ab9de860c0ae2c6aa062c187ca23d2a4ec0dedd1c9e472a25e22fb0"
+    },
+    {
+      "original_path": "evoamr/data/results_repr_evo/microreact_kp_kleborate22/lineage_ST147/stage2/model.pt",
+      "original_sha256": "36873089f211575e1ddb61dd92f69cede2a663bb1836e2c5a2899ec56ed599ca",
+      "repository_path": "checkpoints/klebsiella_kleborate22_lineage_ST147/model.pt",
+      "repository_sha256": "bb81c5fa5baa51a34b0238af9c4a8b57b97b78c91e0e5237c2e3b571de285b5d"
+    },
+    {
+      "original_path": "evoamr/data/results_repr_evo/microreact_kp_kleborate22/lineage_ST15/stage2/model.pt",
+      "original_sha256": "ff57ea68a0967a692547cedcb8c983325debe5fdd99798b704c06ffaaffe5579",
+      "repository_path": "checkpoints/klebsiella_kleborate22_lineage_ST15/model.pt",
+      "repository_sha256": "0041e50376ef7c92d7f65ad5fe92dc99bb57bcca3ac413d0f212a71c05bb74af"
+    },
+    {
+      "original_path": "evoamr/data/results_repr_evo/microreact_kp_kleborate22/lineage_ST258/stage2/model.pt",
+      "original_sha256": "e20053ab0a3a826cc27cd1f1c7f81a6ddd57bfc99a180c3bdb5cbf1b4217bc5c",
+      "repository_path": "checkpoints/klebsiella_kleborate22_lineage_ST258/model.pt",
+      "repository_sha256": "aab79836250a9ac2ab11c6978969345ecd1da47414cc57511523901343287fe2"
+    },
+    {
+      "original_path": "evoamr/data/results_repr_evo/microreact_kp_kleborate22/lineage_ST307/stage2/model.pt",
+      "original_sha256": "7d0c7b7b4e1c50319f0e932297917de04e1bfa156fcad0d29c9f125c2b1a7b70",
+      "repository_path": "checkpoints/klebsiella_kleborate22_lineage_ST307/model.pt",
+      "repository_sha256": "e7e904b6f28f9350162612745e8c090556ab4a2c35e12a2fb5c0a87ca9be6e9b"
+    },
+    {
+      "original_path": "evoamr/data/results_repr_evo/microreact_kp_kleborate22/lineage_ST512/stage2/model.pt",
+      "original_sha256": "11b5a45c8a2cb37d5ebf72496a646f5bee98646dc6c01fcde032f3f6967235ab",
+      "repository_path": "checkpoints/klebsiella_kleborate22_lineage_ST512/model.pt",
+      "repository_sha256": "25d2cbce3a300fcd833fec4ce262ef3c502d2bc95dc721e41d08daf2a2bbf869"
+    },
+    {
+      "original_path": "evoamr/data/results_repr_evo/ecoli2026_route_b/endpoint/two_stage_temporal_inferred/NIT/stage2/model.pt",
+      "original_sha256": "9918fe43ff171d1dd39efeaa025532e5c3d2569eb1409917f12d6122b4b64bd5",
+      "repository_path": "checkpoints/ecoli_nit/model.pt",
+      "repository_sha256": "16a692a807666ab5ecd1804799831620049639c9dea79447c1d7ad85631f88b7"
+    },
+    {
+      "original_path": "evoamr/data/results_repr_evo/ecoli2026_route_b/endpoint/two_stage_temporal_inferred/MEC/stage2/model.pt",
+      "original_sha256": "fb895df77120b3cac3a229076b45161cbe112a0ff8cad2ce65b216e15aa68654",
+      "repository_path": "checkpoints/ecoli_mec/model.pt",
+      "repository_sha256": "e4876eba3dd467b8ea6ef96724d40add9b5a1b60d6191b054b21ac97752c3a7c"
+    },
+    {
+      "original_path": "evoamr/data/results_repr_evo/ecoli2026_route_b/endpoint/two_stage_temporal_inferred/TMP/stage2/model.pt",
+      "original_sha256": "1e9ec78b983ee4df7293bfc716aff5c5f0d28af934aae04fa2d85d38a5489301",
+      "repository_path": "checkpoints/ecoli_tmp/model.pt",
+      "repository_sha256": "6d858efbf02836e271833fd5ab6c550e4ed30a4a498b454ee41514829d6539e9"
+    }
+  ]
+}

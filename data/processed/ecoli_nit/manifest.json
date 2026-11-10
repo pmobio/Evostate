@@ -1,0 +1,23 @@
+{
+  "drug": "NIT",
+  "mode": "inferred",
+  "order_by": "frequency",
+  "background_mode": "marker",
+  "env_mode": "none",
+  "n_populations": 101,
+  "n_transitions": 1819,
+  "n_features": 320,
+  "n_background_markers": 35,
+  "n_gene_features": 285,
+  "n_gained_total": 1819,
+  "n_environment_features": 0,
+  "population_id_time_anchored": 1744,
+  "transition_strategy": "irreversible",
+  "files": {
+    "transitions": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/NIT/transitions/transitions.csv",
+    "feature_hierarchy": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/NIT/feature_hierarchy.csv",
+    "samples": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/NIT/samples.csv",
+    "transition_timings": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/NIT/transition_timings.csv",
+    "phenotype_covariates": "<evoamr>/data/ecoli2026/derived/two_stage_temporal_inferred/NIT/phenotype_covariates.csv"
+  }
+}

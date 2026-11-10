@@ -1,0 +1,11 @@
+feature_id,layer,drug_class,mechanism,location,reversible
+INH,drug_phenotype,isoniazid,resistance_phenotype,chromosome,0
+RIF,drug_phenotype,rifampicin,resistance_phenotype,chromosome,0
+PZA,drug_phenotype,pyrazinamide,resistance_phenotype,chromosome,0
+EMB,drug_phenotype,ethambutol,resistance_phenotype,chromosome,0
+STR,drug_phenotype,streptomycin,resistance_phenotype,chromosome,0
+AMI,drug_phenotype,amikacin,resistance_phenotype,chromosome,0
+CAP,drug_phenotype,capreomycin,resistance_phenotype,chromosome,0
+MOX,drug_phenotype,moxifloxacin,resistance_phenotype,chromosome,0
+OFL,drug_phenotype,ofloxacin,resistance_phenotype,chromosome,0
+PRO,drug_phenotype,prothionamide,resistance_phenotype,chromosome,0

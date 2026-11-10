@@ -1,0 +1,32 @@
+{
+  "checkpoint_sha256": "0041e50376ef7c92d7f65ad5fe92dc99bb57bcca3ac413d0f212a71c05bb74af",
+  "n_walks": 1500,
+  "seed": 1,
+  "features": [
+    "AGly_acquired",
+    "Col_acquired",
+    "Fcyn_acquired",
+    "Flq_acquired",
+    "Gly_acquired",
+    "MLS_acquired",
+    "Phe_acquired",
+    "Rif_acquired",
+    "Sul_acquired",
+    "Tet_acquired",
+    "Tgc_acquired",
+    "Tmt_acquired",
+    "Bla_acquired",
+    "Bla_inhR_acquired",
+    "Bla_ESBL_acquired",
+    "Bla_ESBL_inhR_acquired",
+    "Bla_Carb_acquired",
+    "Bla_chr",
+    "SHV_mutations",
+    "Omp_mutations",
+    "Col_mutations",
+    "Flq_mutations"
+  ],
+  "protocol": "hc.bubble_from_scorer; zero start; gain-only; complete L steps",
+  "inference_code_sha256": "73e3d5ebfb03981653c34fc5c92d6f9bc9f1382409e08256f6bbed6367cfe369",
+  "walk_code_sha256": "b44cb830c92b7bde3a80eb50699df4d9e37f6cef4f9808076e1aec95ba1421be"
+}

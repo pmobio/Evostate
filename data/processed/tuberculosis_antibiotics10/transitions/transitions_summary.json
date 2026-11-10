@@ -1,0 +1,52 @@
+{
+  "mode": "tree",
+  "barcode": "<evoamr>/data/processed/tuberculosis_antibiotics10/category_barcode.csv",
+  "hierarchy": "<evoamr>/data/processed/tuberculosis_antibiotics10/feature_hierarchy.csv",
+  "n_features": 10,
+  "feature_columns": [
+    "INH",
+    "RIF",
+    "PZA",
+    "EMB",
+    "STR",
+    "AMI",
+    "CAP",
+    "MOX",
+    "OFL",
+    "PRO"
+  ],
+  "n_leaves_matched": 395,
+  "reversible_prior": {
+    "hierarchy": "<evoamr>/data/processed/tuberculosis_antibiotics10/feature_hierarchy.csv",
+    "mode": "auto",
+    "patterns": [],
+    "unmatched_patterns": [],
+    "source": null,
+    "reason": "no reversible prior found in hierarchy",
+    "n_reversible": 0,
+    "reversible_features": [],
+    "n_missing_feature_ids": 0,
+    "missing_feature_ids": []
+  },
+  "strategy": "irreversible",
+  "description": "legacy irreversible AND parsimony (HyperTraPS-compatible default)",
+  "hypertraps_compatible": true,
+  "n_informative_transitions": 427,
+  "n_multi_gain_transitions": 238,
+  "n_loss_transitions": 0,
+  "n_multi_loss_transitions": 0,
+  "n_groups": 58,
+  "gained_feature_counts": {
+    "EMB": 163,
+    "STR": 135,
+    "PRO": 123,
+    "OFL": 85,
+    "MOX": 83,
+    "PZA": 82,
+    "RIF": 62,
+    "CAP": 51,
+    "AMI": 41,
+    "INH": 36
+  },
+  "lost_feature_counts": {}
+}

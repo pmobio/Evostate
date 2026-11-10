@@ -1,0 +1,45 @@
+{
+  "inputs": {
+    "data/manuscript/ecoli2026/derived/two_stage_temporal_inferred/NIT/transitions/transitions.csv": "624fcaed086a783673999e2a4f0452aa028f556008213204fcf39b9c376384a4",
+    "data/manuscript/ecoli2026/derived/two_stage_temporal_inferred/NIT/transition_timings.csv": "ac4997aad39111cef403b8cafd91b7d7cdaba1fbe17ca389b12e16ac5ea043fe",
+    "data/manuscript/ecoli2026/derived/two_stage_temporal_inferred/NIT/feature_hierarchy.csv": "c6ff57b4bdd340e2d8e486c3ca8bfdb59a25aa47d73c165c2ffe92f6f436c3eb",
+    "data/manuscript/ecoli2026/derived/endpoint/NIT/population_matrix.csv": "da190b880e77006eb2c2f86c29d0c1404f5f6ce733e42f3f0ddcc088d55516ec",
+    "data/manuscript/ecoli2026/derived/endpoint/NIT/populations.csv": "f5322c6878ad3ab3cb4f605bf2961ac4c377657f92bbd31166e93208a99d221d",
+    "checkpoints/ecoli_nit/model.pt": "16a692a807666ab5ecd1804799831620049639c9dea79447c1d7ad85631f88b7",
+    "data/manuscript/ecoli2026/derived/two_stage_temporal_inferred/MEC/transitions/transitions.csv": "3c88126faa6fb82ef02d2c679a03dff82bd5223b7c8a4264b987dac200df2083",
+    "data/manuscript/ecoli2026/derived/two_stage_temporal_inferred/MEC/transition_timings.csv": "8cda2eb8092b830c723a46622527e27db38e082d6817424e5fadc2137f9d23e1",
+    "data/manuscript/ecoli2026/derived/two_stage_temporal_inferred/MEC/feature_hierarchy.csv": "da6ee01fd09a5b05173776f3fee1cd54c437c127e7c8a9271499154f1b2bf4a1",
+    "data/manuscript/ecoli2026/derived/endpoint/MEC/population_matrix.csv": "0550b54435e012e7f45065c085001b78e55ec6f21cfc919adc8b712a020da6c1",
+    "data/manuscript/ecoli2026/derived/endpoint/MEC/populations.csv": "a7d378da7e4e96359a3e3c263e8fa606c41bc2182da4923fac24b6622dcab464",
+    "checkpoints/ecoli_mec/model.pt": "e4876eba3dd467b8ea6ef96724d40add9b5a1b60d6191b054b21ac97752c3a7c",
+    "data/manuscript/ecoli2026/derived/two_stage_temporal_inferred/TMP/transitions/transitions.csv": "75e2fbf981697bf55aba8cd57fdc7f128beb2fc0f03722bbab957389923094cb",
+    "data/manuscript/ecoli2026/derived/two_stage_temporal_inferred/TMP/transition_timings.csv": "78ccde137b7e972a4a10c953459e51912472f86fac7f82c067f2c16c390c994c",
+    "data/manuscript/ecoli2026/derived/two_stage_temporal_inferred/TMP/feature_hierarchy.csv": "70b59794e56896a92eccea1189a51bba4192fcfb7ee95c62e7419eafa39e8fdb",
+    "data/manuscript/ecoli2026/derived/endpoint/TMP/population_matrix.csv": "ef2aced0fa8ea30ebdbe00de0d821774ea22c1accf41364043e12c78df36c6f0",
+    "data/manuscript/ecoli2026/derived/endpoint/TMP/populations.csv": "3b624a2651bf47d41221f839743d3c726e0068fe0f3dddc4caade03ddc3e0057",
+    "checkpoints/ecoli_tmp/model.pt": "6d858efbf02836e271833fd5ab6c550e4ed30a4a498b454ee41514829d6539e9"
+  },
+  "config": {
+    "version": 1,
+    "evaluation": "in_sample_inferred_transitions",
+    "baseline": "full_population_endpoint_frequency",
+    "tie_rank": "midrank",
+    "top5": "expected_hit_under_uniform_tie_breaking",
+    "batch_size": 4,
+    "seed": 0,
+    "bootstrap_repeats": 2000,
+    "max_case_source_genes": 8
+  },
+  "outputs": {
+    "items": "3c81703c8b8c163e31d9ad9d2581f63ed638872dcf55ff6fdb19b52e4aa6caea",
+    "summary": "142de6b344154a59cc681d103621b2fb1e968fd167308a40c4868b5f42b9c22b",
+    "populations": "6511515103cc6feccb27b6869b69b15826fe43ce6476f4650b11ad1f8a2ae0a7",
+    "groups": "cde17a6064a218009dfbde3f25c42d4d009fde9def3a652eacbf2c4b8197f93f",
+    "cases": "dbb698bbb26bacc7b71a1cebd84cb7b1288a7ea0266b041b143ace96e1f9e04c",
+    "excluded": "2dc77c0e66d3a109bdd765f7dd2ab49fa97a68761a551cf618d30fdcafa6a67d"
+  },
+  "random_init": "not available; not shown",
+  "time_labels": "inferred, not measured",
+  "case_top5_ties": "stable feature order for displayed lists; average ranks and expected hits for metrics",
+  "grouped_cv_claim": "not made; full-data checkpoints used"
+}

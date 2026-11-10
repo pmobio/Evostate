@@ -1,0 +1,114 @@
+==============================================================
+ repr_evo :: tuberculosis HyperTraPS vs two-stage
+   preset                  : combined29 (Figure 7C / 19 genes + 10 antibiotic phenotypes)
+   dataset                 : tuberculosis_combined29
+   transitions             : /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/processed/tuberculosis_combined29/transitions/transitions.csv
+   hierarchy               : /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/processed/tuberculosis_combined29/feature_hierarchy.csv
+   split_mode              : grouped
+   folds                   : 5
+   seed                    : 0
+   feature_mode            : identity_state -> Identity + state only
+   meta_fields             : <none>
+   use_meta                : 0
+   pretrain_epochs         : 120
+   finetune_epochs         : 120
+   d_model                 : 256
+   n_layers                : 3
+   n_heads                 : 4
+   dropout                 : 0.30
+   lr                      : 0.001
+   weight_decay            : 0.001
+   batch_size              : 16
+   mask_prob               : 0.15
+   mask_prob_pos           : 0.5
+   mask_prob_neg           : 0.1
+   contrastive_weight      : 0.05
+   contrastive_temperature : 0.1
+   contrastive_warmup      : 0
+   ckpt_metric             : val_loss
+   with_ht                 : 1
+   ht_model                : second-order
+   ht_N/burn/r             : 200 / 5000 / 100
+   ht_timeout              : 1800
+   ht_threads              : 2
+   ht_bin                  : /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/refs/HyperTraPS/bin/RUN_MCMC_SAMPLER
+   outdir                  : /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/results_repr_evo/tuberculosis_combined29/hypertraps_vs_two_stage/combined29_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800
+   log                     : /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/results_repr_evo/tuberculosis_combined29/hypertraps_vs_two_stage/combined29_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800/run.log
+==============================================================
+
+[2026-08-18 14:02:52] Two-stage eval: transitions.csv -> /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/results_repr_evo/tuberculosis_combined29/hypertraps_vs_two_stage/combined29_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800
+/home/chriszyyang/anaconda3/envs/evoamr/lib/python3.10/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/home/chriszyyang/anaconda3/envs/evoamr/lib/python3.10/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/home/chriszyyang/anaconda3/envs/evoamr/lib/python3.10/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/home/chriszyyang/anaconda3/envs/evoamr/lib/python3.10/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/home/chriszyyang/anaconda3/envs/evoamr/lib/python3.10/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/home/chriszyyang/anaconda3/envs/evoamr/lib/python3.10/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+[two_stage_eval][ht] backend=legacy_sampler bin=/apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/refs/HyperTraPS/bin/RUN_MCMC_SAMPLER
+>>> input=485 eval=485 features=29 split_mode=grouped groups=58 folds=5
+
+=== Fold 1/5: train=388 test=97 ===
+  [ht] backend=legacy_sampler run: /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/refs/HyperTraPS/bin/RUN_MCMC_SAMPLER -f transitions.txt -M second-order -N 200 -r 100 -b 5000 -i 100 -S 1 -t 2
+  [ht] WARN: HyperTraPS fold 0 failed: legacy RUN_MCMC_SAMPLER failed (TimeoutExpired); skip HT on this fold
+        B0_uniform | logL=-3.0562 | top1=0.033 top3=0.100 top5=0.200 | MRR=0.145 | AUC=0.500 | clean=30 multi=67
+     B1_prevalence | logL=-2.6374 | top1=0.233 top3=0.467 top5=0.533 | MRR=0.400 | AUC=0.754 | clean=30 multi=67
+    TS_random_init | logL=-2.1527 | top1=0.367 top3=0.567 top5=0.733 | MRR=0.523 | AUC=0.856 | clean=30 multi=67
+     TS_pretrained | logL=-2.0839 | top1=0.367 top3=0.667 top5=0.733 | MRR=0.547 | AUC=0.868 | clean=30 multi=67
+
+=== Fold 2/5: train=388 test=97 ===
+  [ht] backend=legacy_sampler run: /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/refs/HyperTraPS/bin/RUN_MCMC_SAMPLER -f transitions.txt -M second-order -N 200 -r 100 -b 5000 -i 100 -S 1 -t 2
+  [ht] WARN: HyperTraPS fold 1 failed: legacy RUN_MCMC_SAMPLER failed (TimeoutExpired); skip HT on this fold
+        B0_uniform | logL=-3.0593 | top1=0.000 top3=0.000 top5=0.031 | MRR=0.070 | AUC=0.500 | clean=32 multi=65
+     B1_prevalence | logL=-2.5447 | top1=0.250 top3=0.531 top5=0.594 | MRR=0.444 | AUC=0.774 | clean=32 multi=65
+    TS_random_init | logL=-2.3821 | top1=0.312 top3=0.594 top5=0.625 | MRR=0.480 | AUC=0.817 | clean=32 multi=65
+     TS_pretrained | logL=-2.3957 | top1=0.312 top3=0.531 top5=0.656 | MRR=0.466 | AUC=0.801 | clean=32 multi=65
+
+=== Fold 3/5: train=388 test=97 ===
+  [ht] backend=legacy_sampler run: /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/refs/HyperTraPS/bin/RUN_MCMC_SAMPLER -f transitions.txt -M second-order -N 200 -r 100 -b 5000 -i 100 -S 1 -t 2
+  [ht] WARN: HyperTraPS fold 2 failed: legacy RUN_MCMC_SAMPLER failed (TimeoutExpired); skip HT on this fold
+        B0_uniform | logL=-2.9101 | top1=0.000 top3=0.075 top5=0.075 | MRR=0.094 | AUC=0.500 | clean=40 multi=57
+     B1_prevalence | logL=-2.1682 | top1=0.300 top3=0.800 top5=0.825 | MRR=0.533 | AUC=0.889 | clean=40 multi=57
+    TS_random_init | logL=-1.5886 | top1=0.525 top3=0.800 top5=0.925 | MRR=0.692 | AUC=0.927 | clean=40 multi=57
+     TS_pretrained | logL=-1.7486 | top1=0.400 top3=0.850 top5=0.925 | MRR=0.631 | AUC=0.909 | clean=40 multi=57
+
+=== Fold 4/5: train=388 test=97 ===
+  [ht] backend=legacy_sampler run: /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/refs/HyperTraPS/bin/RUN_MCMC_SAMPLER -f transitions.txt -M second-order -N 200 -r 100 -b 5000 -i 100 -S 1 -t 2
+  [ht] WARN: HyperTraPS fold 3 failed: legacy RUN_MCMC_SAMPLER failed (TimeoutExpired); skip HT on this fold
+        B0_uniform | logL=-2.8707 | top1=0.053 top3=0.079 top5=0.105 | MRR=0.142 | AUC=0.500 | clean=38 multi=59
+     B1_prevalence | logL=-2.3616 | top1=0.184 top3=0.658 top5=0.711 | MRR=0.461 | AUC=0.782 | clean=38 multi=59
+    TS_random_init | logL=-1.9803 | top1=0.500 top3=0.711 top5=0.816 | MRR=0.629 | AUC=0.843 | clean=38 multi=59
+     TS_pretrained | logL=-1.9430 | top1=0.474 top3=0.684 top5=0.789 | MRR=0.619 | AUC=0.853 | clean=38 multi=59
+
+=== Fold 5/5: train=388 test=97 ===
+  [ht] backend=legacy_sampler run: /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/refs/HyperTraPS/bin/RUN_MCMC_SAMPLER -f transitions.txt -M second-order -N 200 -r 100 -b 5000 -i 100 -S 1 -t 2
+  [ht] WARN: HyperTraPS fold 4 failed: legacy RUN_MCMC_SAMPLER failed (TimeoutExpired); skip HT on this fold
+        B0_uniform | logL=-3.0564 | top1=0.080 top3=0.120 top5=0.160 | MRR=0.150 | AUC=0.500 | clean=25 multi=72
+     B1_prevalence | logL=-2.3948 | top1=0.240 top3=0.600 top5=0.760 | MRR=0.474 | AUC=0.845 | clean=25 multi=72
+    TS_random_init | logL=-2.5191 | top1=0.160 top3=0.560 top5=0.720 | MRR=0.394 | AUC=0.797 | clean=25 multi=72
+     TS_pretrained | logL=-2.3267 | top1=0.240 top3=0.600 top5=0.760 | MRR=0.468 | AUC=0.841 | clean=25 multi=72
+
+=== Overall ===
+        B0_uniform | logL=-2.9905 | top1=0.033 top3=0.075 top5=0.114 | MRR=0.120 | AUC=0.500 | clean=33 multi=64
+     B1_prevalence | logL=-2.4213 | top1=0.242 top3=0.611 top5=0.685 | MRR=0.462 | AUC=0.809 | clean=33 multi=64
+    TS_random_init | logL=-2.1246 | top1=0.373 top3=0.646 top5=0.764 | MRR=0.544 | AUC=0.848 | clean=33 multi=64
+     TS_pretrained | logL=-2.0996 | top1=0.359 top3=0.666 top5=0.773 | MRR=0.546 | AUC=0.854 | clean=33 multi=64
+[two_stage_eval] summary: /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/results_repr_evo/tuberculosis_combined29/hypertraps_vs_two_stage/combined29_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800/eval_summary.json
+
+=== Summary Check ===
+methods=['B0_uniform', 'B1_prevalence', 'TS_random_init', 'TS_pretrained']
+pretrained_vs_prevalence={'left_method': 'TS_pretrained', 'right_method': 'B1_prevalence', 'delta_mean_logl': 0.3379374622210456, 'p_value': 0.0, 'verdict': 'TS_pretrained better'}
+pretrained_vs_hypertraps=None
+ht_vs_prevalence=None
+[WARN] HyperTraPS 未进入最终 methods；通常表示某些 fold 超时/失败，请优先检查 run.log 中的 TimeoutExpired 或 runtime 解析错误。
+
+==============================================================
+ repr_evo :: HT vs two-stage DONE
+   summary : /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/results_repr_evo/tuberculosis_combined29/hypertraps_vs_two_stage/combined29_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800/eval_summary.json
+   folds   : /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/results_repr_evo/tuberculosis_combined29/hypertraps_vs_two_stage/combined29_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800/fold_metrics.json
+   log     : /apdcephfs_qy3/share_2932069/ziyiyang/1-antibiotic_resistance/EvoAMR/evoamr/data/results_repr_evo/tuberculosis_combined29/hypertraps_vs_two_stage/combined29_grouped_ts_contrastive_identity_state_ht_second-order_r100_timeout1800/run.log
+==============================================================

@@ -1,0 +1,9 @@
+support_measure,minimum_single,scope,n_ST,spearman_rho,p_value
+n_genomes,1,strictly held-out STs with >=1 single gains and recorded genome count,578,-0.11692129242574868,0.004884519314153782
+n_single,1,strictly held-out STs with >=1 single gains and recorded genome count,578,-0.14111393912111342,0.0006682015070391369
+n_genomes,2,strictly held-out STs with >=2 single gains and recorded genome count,237,-0.3487077793780574,3.508625280592377e-08
+n_single,2,strictly held-out STs with >=2 single gains and recorded genome count,237,-0.3993398796181308,1.7389458037891661e-10
+n_genomes,5,strictly held-out STs with >=5 single gains and recorded genome count,86,-0.18737260365330516,0.08407229487979943
+n_single,5,strictly held-out STs with >=5 single gains and recorded genome count,86,-0.20172525675187244,0.06252623371395322
+n_genomes,10,strictly held-out STs with >=10 single gains and recorded genome count,42,-0.13162587518297073,0.40602228414003094
+n_single,10,strictly held-out STs with >=10 single gains and recorded genome count,42,-0.2271530391633233,0.14798592418926376
